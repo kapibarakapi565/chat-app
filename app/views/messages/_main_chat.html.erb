@@ -4,41 +4,7 @@
     <div class="btn-close"><a href="#">チャットを終了する</a></div>
   </div>
   <div class="chat_center">
-    <div class="messages">
-      <div class="info">
-        <div class="user_name">Tom</div>
-        <div class="post_time">2020/3/31(Wed)12:43:30</div>
-      </div>
-      <div class="post_message">おはよう</div>
-    </div>
-    <div class="messages">
-      <div class="info">
-        <div class="user_name">Tom</div>
-        <div class="post_time">2020/3/31(Wed)12:43:30</div>
-      </div>
-      <div class="post_message">おはよう</div>
-    </div>
-    <div class="messages">
-      <div class="info">
-        <div class="user_name">Tom</div>
-        <div class="post_time">2020/3/31(Wed)12:43:30</div>
-      </div>
-      <div class="post_message">おはよう</div>
-    </div>
-    <div class="messages">
-      <div class="info">
-        <div class="user_name">Tom</div>
-        <div class="post_time">2020/3/31(Wed)12:43:30</div>
-      </div>
-      <div class="post_message">おはよう</div>
-    </div>
-    <div class="messages">
-      <div class="info">
-        <div class="user_name">Tom</div>
-        <div class="post_time">2020/3/31(Wed)12:43:30</div>
-      </div>
-      <div class="post_message">おはよう</div>
-    </div>
+    <%= render partial: 'message', collection: @messages %>
   </div>
   <div class="chat_footer">
     <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
